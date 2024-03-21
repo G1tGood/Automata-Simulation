@@ -1,0 +1,15 @@
+:host {
+  display: block;
+}
+
+draggable-wrapper:hover {
+  transform: scale(1.07);
+  transition: transform 0.5s ease;
+}
+
+draggable-wrapper {
+  position: absolute;
+  cursor: pointer;
+  background: transparent;
+  border: 50%;
+}

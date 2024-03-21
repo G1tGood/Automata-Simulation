@@ -1,0 +1,56 @@
+:host {
+  top:auto;
+  left:auto;
+  display: block;
+  user-select: none;
+}
+
+.text-circle {
+  position: relative;
+  --diameter: 50px;
+  width: calc(var(--diameter));
+  height: calc(var(--diameter));
+  justify-items: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 50%; /* Makes the element a circle */
+  border-style: solid;
+  border-width: calc(var(--diameter) * 0.05);
+  border-color: black;
+  background-color: white; /* Set the background color of the circle */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+.stack {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.name {
+  font-size: 1em;
+}
+
+.text-circle .ring {
+  fill: none;
+  border-color: black;
+  width: calc(var(--diameter) * 0.85);
+  height: calc(var(--diameter) * 0.85);
+  border-style: solid;
+  border-radius: 50%;
+  border-width: calc(var(--diameter) * 0.05);
+}
+
+.text-circle input {
+  border: none; /* Remove border */
+  background: none; /* Remove background */
+  box-shadow: none; /* Remove box shadow */
+  outline: none; /* Remove focus outline */
+  width: 100%;
+  text-align: center;
+}
+

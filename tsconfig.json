@@ -4,6 +4,8 @@
     "allowUnreachableCode": false,
     "declaration": false,
     "experimentalDecorators": true,
+    "allowJs": true,
+    "outDir": "./dist",
     "lib": [
       "dom",
       "es2017"
@@ -11,7 +13,7 @@
     "moduleResolution": "node",
     "module": "esnext",
     "target": "es2017",
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "jsx": "react",
     "jsxFactory": "h"
@@ -20,6 +22,7 @@
     "src"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "dist",
   ]
 }

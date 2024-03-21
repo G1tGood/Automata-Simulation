@@ -1,0 +1,125 @@
+:host {
+  display: block;
+}
+
+:host > * {
+  margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+/* Gradient Text */
+.gradient-title {
+  position: relative;
+  margin: auto;
+  font-size: 36px;
+  font-weight: bold;
+  background: linear-gradient(to right, #2b1ba2, #5d9c04);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Underline Animation */
+.underline-title {
+  font-size: 36px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+#overlay > * {
+  position: relative;
+  width: 25%;
+  margin: auto;
+  padding: 20px; /* Adjust the value as needed */
+}
+
+.my-container {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #ccc; /* Border color */
+  background-color: #f0f0f0; /* Grey background color */
+}
+
+.selected-state {
+  transform: scale(1.27);
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hover-reveal {
+  display: none;
+}
+
+.reveal-container:hover .hover-reveal {
+  display: block;
+}
+
+#alphaBet-table {
+  border: solid black;
+  text-align: center; 
+  width : 25%; 
+  position: relative; 
+  margin : auto; 
+  table-layout: fixed;
+}
+
+.my-table {
+  border: black solid;
+  text-align: center; 
+  width : 25%; 
+  position: relative; 
+  margin : auto; 
+  table-layout: fixed;
+}
+
+#alphaBet-table td:last-child, th:last-child {
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+}
+
+#alphaBet-table td:nth-child(2), th:nth-child(2) {
+  border: black solid 1px;
+}
+
+#alphaBet-table tr {
+  border: none;
+}
+
+#alphaBet-table td:first-child, th:first-child {
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
+}
+
+.transparent-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+#transitions-table {
+  text-align: center;
+  width: 25%;
+  margin: auto;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  pointer-events: none;
+  z-index: 9999;
+}
